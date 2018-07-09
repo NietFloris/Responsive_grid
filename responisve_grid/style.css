@@ -10,6 +10,13 @@ header {
     padding: 2em;
 }
 
+#validatie img {
+    height: 3em;
+    width: auto;
+    border: 0;
+    margin: 0 .3em;
+}
+
 header, aside {
     background-color: rgba(180, 220,255, 0.5);
 }
@@ -100,8 +107,8 @@ footer {
         "a8 afb2"
         "a9 a10"
         "foot foot";
-
     }
+
     header {grid-area: head;}
     .simpel {grid-area: a1;}
     .prestatie {grid-area: a2;}
@@ -113,8 +120,8 @@ footer {
     .spelling {grid-area: a8;}
     .ogen {grid-area: a9;}
     .referenties {grid-area: a10;}
-    .afb {grid-area: afb;}
-    .afb2 {grid-area: afb2;}
+    .img {grid-area: afb;}
+    .img2 {grid-area: afb2;}
     footer {grid-area: foot;}
 
     h1 {
@@ -130,9 +137,9 @@ footer {
                 "head head head"
                 "a1 a2 afb"
                 "a3 a4 afb"
-                "a4 a5 a6"
-                "afb2 a7 a8"
-                "afb2 a9 a10"
+                "a5 a6 a7"
+                "afb2 a8 a9"
+                "afb2 a10 a10"
                 "foot foot foot";
 
     }
