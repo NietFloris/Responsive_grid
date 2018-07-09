@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+html, body, h3 {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    padding: 2em;
+}
+
+header, aside {
+    background-color: rgba(180, 220,255, 0.5);
+}
+
+h1, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, .tagline {
+    color: #47a;
+}
+
+
+.nummer {
+    background-color: #47a;
+    color: #fff;
+    font-size: 2em;
+    width: 1.2em;
+    text-align: right;
+    padding: .2em;
+}
+section {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding-bottom: .2em;
+}
+
+article {
+    padding: 1em;
+}
+section img {
+    max-width: 100%;
+}
+
+aside ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+aside h3 {
+    background-color: #47a;
+    padding: 2em 0;
+    color: #fff;
+}
+
+aside a {
+    text-decoration: none;
+    padding: 2em 0;
+    display: block;
+}
+
+aside a:hover {
+    background-color: #47a;
+    color: #fff;
+}
+
+footer {
+    background-color: #333;
+    color: #eee;
+    padding: 2em;
+}
+
+@media screen and (min-width: 760px){
+    .img {
+        display: block;
+        background-image: url("Depositphotos_84032458_l-2015-1024x683.jpg");
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .img2 {
+        display: block;
+        background-image: url("cv_mistakes.jpg");
+        background-size: cover;
+        background-position: center center;
+    }
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "head head"
+        "a1 a2"
+        "afb a3"
+        "a4 a5"
+        "a6 a7"
+        "a8 afb2"
+        "a9 a10"
+        "foot foot";
+
+    }
+    header {grid-area: head;}
+    .simpel {grid-area: a1;}
+    .prestatie {grid-area: a2;}
+    .chronologie {grid-area: a3;}
+    .stem_af {grid-area: a4;}
+    .eerlijk {grid-area: a5;}
+    .activiteiten {grid-area: a6;}
+    .duidelijk {grid-area: a7;}
+    .spelling {grid-area: a8;}
+    .ogen {grid-area: a9;}
+    .referenties {grid-area: a10;}
+    .afb {grid-area: afb;}
+    .afb2 {grid-area: afb2;}
+    footer {grid-area: foot;}
+
+    h1 {
+       font-size: 2.6em;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    body {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+                "head head head"
+                "a1 a2 afb"
+                "a3 a4 afb"
+                "a4 a5 a6"
+                "afb2 a7 a8"
+                "afb2 a9 a10"
+                "foot foot foot";
+
+    }
+}
+
+
+
+
